@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Scientific Calculator</title>
+	<link rel="stylesheet" type="text/css" href="scicalcss.css">
+	<script type="text/javascript" src="scicalcjs.js"></script>
+</head>
+<body>
+<form name="sciCalc">
+ <table border="1">
+         <tr>
+            <td colspan="5" class="tres"><input type="text" id="result" placeholder="0" class="topbox"></td>
+         </tr>
+         <tr>
+            <td class="trmv"><input type="button" class="rmv" value="c" onclick="clr()"> </td>
+            <td colspan="3" id="tcal"><a href="cal.html"><input type="button" id="cal" value="Normal Calculator" title="Navigate to Normal Calculator?, Click here"></a></td>
+            <td class="trmv"><input type="button" class="rmv" value="del" onclick="delChar(result)"></td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="1" onclick="disply(this.form.result,'1')"> </td>
+            <td class="tnum"><input type="button" class="num" value="2" onclick="disply(this.form.result,'2')"> </td>
+            <td class="tnum"><input type="button" class="num" value="3" onclick="disply(this.form.result,'3')"> </td>
+            <td class="tOp"><input type="button"  class="Op"value="/" onclick="disply(this.form.result,'/')"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="sin" onclick="sin1()"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="4" onclick="disply(this.form.result,'4')"> </td>
+            <td class="tnum"><input type="button" class="num" value="5" onclick="disply(this.form.result,'5')"> </td>
+            <td class="tnum"><input type="button" class="num" value="6" onclick="disply(this.form.result,'6')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="-" onclick="disply(this.form.result,'-')"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="cos" onclick="cos1()"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="7" onclick="disply(this.form.result,'7')"> </td>
+            <td class="tnum"><input type="button" class="num" value="8" onclick="disply(this.form.result,'8')"> </td>
+            <td class="tnum"><input type="button" class="num" value="9" onclick="disply(this.form.result,'9')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="+" onclick="disply(this.form.result,'+')"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="tan" onclick="tan1()"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="." onclick="disply(this.form.result,'.')" style="font-weight: bold;"> </td>
+            <td class="tnum"><input type="button" class="num" value="0" onclick="disply(this.form.result,'0')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="*" onclick="disply(this.form.result,'*')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="%" onclick="disply(this.form.result,'%')"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="log" onclick="log1()"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="(" onclick="disply(this.form.result,'(')"> </td>
+            <td class="tnum"><input type="button" class="num" value=")" onclick="disply(this.form.result,')')"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="π" onclick="pii()"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="√" onclick="sqrt1()"> </td>
+            <td class="tsc"><input type="button"  class="sc" value="x²" onclick="sq()"> </td>
+         </tr>
+         <tr>
+            <td colspan="4" class="teq"><input type="button" class="eq" value="=" onclick="solve(this.form,'=')"> </td>
+            <td class="tsc"><input type="button" class="sc" value="3√" onclick="cubert1()"> </td>
+         </tr>
+      </table>
+</form>
+</body>
+</html>

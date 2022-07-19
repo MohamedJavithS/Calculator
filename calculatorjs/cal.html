@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Calculator</title>
+   <link rel="stylesheet" type="text/css" href="calcss.css">
+   <script type="text/javascript" src="calcjs.js"></script>
+</head>
+<body>
+      <table border="1">
+         <tr>
+            <td colspan="4" class="tres"><input type="text" id="result" placeholder="0" class="topbox"></td>
+         </tr>
+         <tr>
+            <td class="trmv"><input type="button" class="rmv" value="c" onclick="clr()"> </td>
+            <td colspan="2" id="tscical"> <a href="scicalc.html"><input type="button" id="sci" value="Scientific Calculator" title="Navigate to Scientific Calculator?, Click here"></a></td>
+            <td class="trmv"><input type="button" class="rmv" value="del" onclick="delChar(result)"></td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="1" onclick="disply('1')"> </td>
+            <td class="tnum"><input type="button" class="num" value="2" onclick="disply('2')"> </td>
+            <td class="tnum"><input type="button" class="num" value="3" onclick="disply('3')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="/" onclick="disply('/')"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="4" onclick="disply('4')"> </td>
+            <td class="tnum"><input type="button" class="num" value="5" onclick="disply('5')"> </td>
+            <td class="tnum"><input type="button" class="num" value="6" onclick="disply('6')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="-" onclick="disply('-')"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="7" onclick="disply('7')"> </td>
+            <td class="tnum"><input type="button" class="num" value="8" onclick="disply('8')"> </td>
+            <td class="tnum"><input type="button" class="num" value="9" onclick="disply('9')"> </td>
+            <td class="tOp" ><input type="button" class="Op" value="+" onclick="disply('+')"> </td>
+         </tr>
+         <tr>
+            <td class="tnum"><input type="button" class="num" value="." onclick="disply('.')" style="font-weight: bold;"> </td>
+            <td class="tnum"><input type="button" class="num" value="0" onclick="disply('0')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="*" onclick="disply('*')"> </td>
+            <td class="tOp"><input type="button"  class="Op" value="%" onclick="disply('%')"> </td>
+         </tr>
+         <tr>
+            <td colspan="4" class="teq"><input type="button" class="eq" value="=" onclick="solve()"> </td>
+         </tr>
+      </table>
+   </body>
+</html>   
+</body>
+</html>
